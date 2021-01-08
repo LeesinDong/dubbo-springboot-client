@@ -13,4 +13,9 @@ public class MockSayHelloService implements ISayHelloService {
     public String sayHello() {
         return "sorry，服务器发生异常，被降级了";
     }
+
+    @Override
+    public String sayByeBye(String s) {
+        return null;
+    }
 }
