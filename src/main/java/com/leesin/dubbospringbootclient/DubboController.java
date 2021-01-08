@@ -13,7 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class DubboController {
-    @Reference(cluster = "failfast",loadbalance = "random" ,timeout = 1,mock = "com.leesin.dubbospringbootclient.MockSayHelloService")
+    @Reference(cluster = "failfast",
+            loadbalance = "random" ,
+            timeout = 1,
+            mock = "com.leesin.dubbospringbootclient.MockSayHelloService",
+            url = "dubbo://localhost:20880")
     //        dubbo提供的，相当于autowire
     ISayHelloService sayHelloService;
 
