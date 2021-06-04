@@ -1,6 +1,7 @@
 package com.leesin.dubbospringbootclient;
 
 import com.leesin.ISayHelloService;
+import org.springframework.stereotype.Service;
 
 /**
  * @description:
@@ -8,6 +9,7 @@ import com.leesin.ISayHelloService;
  * @date: Created in 2020/4/20 14:17
  * @modified By:
  */
+@Service
 public class MockSayHelloService implements ISayHelloService {
     @Override
     public String sayHello() {
