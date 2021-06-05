@@ -1,4 +1,4 @@
-package com.leesin.spring.dao;
+package com.leesin.spring.mapper;
 
 import com.leesin.spring.entity.User;
 import org.apache.ibatis.annotations.Mapper;

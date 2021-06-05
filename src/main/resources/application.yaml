@@ -16,3 +16,11 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
     use-generated-keys: true
+
+# mybatis配置
+mybatis-plus:
+  type-aliases-package: com.leesin.spring.entity
+  mapperLocations: classpath*:mapper/*.xml
+  config-location: classpath:mybatis-dev.xml
+  global-config:
+    sql-parser-cache: true
